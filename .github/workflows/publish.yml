@@ -1,0 +1,23 @@
+name: Publish Neuron Site
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          curl -sSLo neuron.tar.gz "$(curl -sL https://api.github.com/repos/srid/neuron/releases/latest | jq -r '.assets[].browser_download_url')"
+          tar -xzf neuron.tar.gz
+          rm neuron.tar.gz
+      - name: Build neuron site 🔧
+        run: ./neuron -d . rib
+      - name: Netlify deploy
+        run: |
+          yarn global add netlify-cli
+          "$(yarn global bin)/netlify" deploy --prod --dir=.neuron/output
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
