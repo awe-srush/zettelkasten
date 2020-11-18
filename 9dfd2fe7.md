@@ -4,7 +4,10 @@ date: 2020-07-24
 
 # Documentation
 
-Documentation is something that's a part of the environment and context. As such, it' s just as important, if not even more so, than the code itself. Like code, it is a precise Good Explanation; however, unlike code, it cannot be computationally verified the same way. Rather than being a downside, it offers an opportunity to express ideas in non-computational form which can ease understanding.
+Documentation is something that's a part of the environment and context.
+As such, it' s just as important, if not even more so, than the code itself.
+Like code, it is a precise Good Explanation; however, unlike code, it cannot be computationally verified the same way.
+Rather than being a downside, it offers an opportunity to express ideas in non-computational form which can ease understanding.
 
 - Treat documentation like code. Whenever possible make it falsifiable.
   - Falsifiable documentation is testable

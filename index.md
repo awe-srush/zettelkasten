@@ -19,8 +19,7 @@ The general idea with the references is to embed in this zettelkasten the differ
 - Fleeting
 - Literary
 - Permanent
-- Reference Material (ideally as some sort of evolving zotero/bibtex/database thing? rip my sanity b.c. no CLI zotero)
-  - Note to self: [papis?](https://github.com/papis/papis)
+- Reference Material
 
 [[z:zettels?tag=pinned]]
 [[z:zettels?tag=questions]]
