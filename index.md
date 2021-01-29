@@ -1,6 +1,4 @@
----
-title: Symmathesetic Aretê
----
+# Symmathesetic Aretê
 
 I have thoughts. Lots of thoughts. They never stop thinking. Never stop thunking.
 
@@ -23,3 +21,10 @@ The general idea with the references is to embed in this zettelkasten the differ
 
 [[z:zettels?tag=pinned]]
 [[z:zettels?tag=questions]]
+
+Note to self:
+
+- write super high level stuff
+- make it slightly more specific
+- relate back to above
+- avoids eg https://cloud.google.com/solutions/devops/devops-tech-test-automation being seen as unapplicable to field X because triangle has UI testing while not being so abstract it doesn't provide real guidance

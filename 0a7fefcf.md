@@ -13,3 +13,4 @@ It should allow for self-service provisioning, configuration, management, and op
 - <https://martinfowler.com/articles/talk-about-platforms.html>
 - [[[e9957dbd]]]
 - <https://media.webteam.puppet.com/uploads/2020/11/Puppet-State-of-DevOps-Report-2020.pdf>
+- Google doesn't get platforms: https://gist.github.com/chitchcock/1281611

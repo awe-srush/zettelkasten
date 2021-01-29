@@ -6,6 +6,10 @@ tags:
 
 # To Read and Digest
 
+- <https://ferd.ca/operable-software.html>
+- <https://github.com/cohomolo-gy/optics-resources>
+- <https://github.com/cohomolo-gy/haskell-resources>
+  - ingest into zotero?
 - <https://www.davefarley.net/?p=305>
   - <https://smile.amazon.com/gp/product/1942788339/ref=as_li_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=1942788339&linkCode=as2&tag=continuousdel-21&linkId=3a240fc87628669baa2f758e0fa6fc80&pldnSite=1>
   - <https://nicolefv.com/research>
