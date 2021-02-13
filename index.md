@@ -28,3 +28,5 @@ Note to self:
 - make it slightly more specific
 - relate back to above
 - avoids eg https://cloud.google.com/solutions/devops/devops-tech-test-automation being seen as unapplicable to field X because triangle has UI testing while not being so abstract it doesn't provide real guidance
+
+- <https://charity.wtf/2018/12/02/software-sprawl-the-golden-path-and-scaling-teams-with-agency/>
