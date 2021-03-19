@@ -7,13 +7,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: cachix/install-nix-action@v12
+      - uses: cachix/cachix-action@v8
+        with:
+          name: srid
       - uses: actions/checkout@v2
-      - run: |
-          curl -sSLo neuron.tar.gz "https://github.com/srid/neuron/releases/download/1.0.1.0/neuron-1.0.1.0-linux.tar.gz"
-          tar -xzf neuron.tar.gz
-          rm neuron.tar.gz
+        with:
+          repository: srid/neuron
+          ref: v1
+          path: neuron
+      - run: nix-env -if .
+        working-directory: neuron
+      - run: rm -rf neuron
+      - uses: actions/checkout@v2
       - name: Build neuron site
-        run: ./neuron -d . rib
+        run: neuron -d . rib
       - name: Netlify deploy
         run: |
           yarn global add netlify-cli
