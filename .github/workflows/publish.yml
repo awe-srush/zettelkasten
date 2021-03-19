@@ -9,10 +9,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          curl -sSLo neuron.tar.gz "$(curl -sL https://api.github.com/repos/srid/neuron/releases/latest | jq -r '.assets[].browser_download_url')"
+          curl -sSLo neuron.tar.gz "https://github.com/srid/neuron/releases/download/1.0.1.0/neuron-1.0.1.0-linux.tar.gz"
           tar -xzf neuron.tar.gz
           rm neuron.tar.gz
-      - name: Build neuron site 🔧
+      - name: Build neuron site
         run: ./neuron -d . rib
       - name: Netlify deploy
         run: |
